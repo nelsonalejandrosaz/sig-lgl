@@ -11,7 +11,7 @@
                     <img src="{{ Gravatar::get($user->email) }}" class="img-circle" alt="User Image" />
                 </div>
                 <div class="pull-left info">
-                    <p style="overflow: hidden;text-overflow: ellipsis;max-width: 160px;" data-toggle="tooltip" title="{{ Auth::user()->name }}">{{ Auth::user()->name }}</p>
+                    <p>{{ Auth::user()->name }}</p>
                     <!-- Status -->
                     <a href="#"><i class="fa fa-circle text-success"></i> {{ trans('adminlte_lang::message.online') }}</a>
                 </div>
@@ -30,14 +30,8 @@
         <!-- /.search form -->
 
         <!-- Sidebar Menu -->
-        @if(Auth::user()->rol_id == 1)
-            {{ Menu::menu_admin() }}
-        @elseif(Auth::user()->rol_id == 2)
-            {{ Menu::menu_estrategico() }}
-        @else
-            {{ Menu::menu_tactico() }}
-        @endif
-            <!-- /.sidebar-menu -->
+        {{ Menu::sidebar() }}
+        <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
 </aside>

@@ -24,6 +24,22 @@ DB_DATABASE=tu_base_de_datos
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+- Ejecutar las migraciones
+```sh
+$ php artisan migrate
+```
+- Ejecutar los seeds
+```sh
+$ php artisan db:seed
+```
+### Usuarios predeterminados
+Estos son los usuarios con los que se puede 
+
+| usuario | pass |
+| ------ | ------ |
+| administrador@lgl.com | qwerty0106|
+| tactico@lgl.com | qwerty0106|
+| estrategico@lgl.com | qwerty0106|
 ****
 ## Enlaces útiles
 * [Documentación Laravel] - Documentación de Laravel 5.6

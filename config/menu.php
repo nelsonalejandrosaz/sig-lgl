@@ -71,8 +71,8 @@ Menu::macro('menu_estrategico', function () {
         // Usuarios
         ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-users"></i><span>Estratégicos</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')
-            ->route('usuario.index','<i class="fa fa-file-text-o"></i><span>Cuentas por Cobrar</span>')->addClass('treeview-menu')
-            ->route('usuario.create','<i class="fa fa-file-text-o"></i><span>Productos mas vendidos</span>')
+            ->route('estrategico.1.parametros','<i class="fa fa-file-text-o"></i><span>Cuentas por Cobrar</span>')->addClass('treeview-menu')
+            ->route('estrategico.2.parametros','<i class="fa fa-file-text-o"></i><span>Productos mas vendidos</span>')
             ->route('usuario.create','<i class="fa fa-file-text-o"></i><span>Margen de ganancia</span>')
             ->route('usuario.create','<i class="fa fa-file-text-o"></i><span>Compras dos meses</span>')
             ->route('usuario.create','<i class="fa fa-file-text-o"></i><span>Ventas dos meses</span>')

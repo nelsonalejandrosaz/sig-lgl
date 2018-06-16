@@ -122,7 +122,7 @@
                     <!-- this row will not appear when printing -->
                     <div class="row no-print">
                         <div class="col-xs-12">
-                            <a href="#" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-print"></i> Imprimir</a>
+                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
                             <button type="button" class="btn btn-lg btn-success pull-right" style="margin-right: 5px;">
                                 <i class="fa fa-file-excel-o"></i> Exportar a Excel
                             </button>

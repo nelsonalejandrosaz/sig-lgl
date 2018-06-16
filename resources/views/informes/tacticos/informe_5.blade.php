@@ -27,8 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="page-header">
-                                <i class="fa fa-globe"></i> LGL S.A. de C.V. <br>
-                                 Informe de cuentas por cobrar por cliente
+                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de cuentas por cobrar por cliente
                             </h2>
                         </div>
                         <!-- /.col -->
@@ -45,7 +44,7 @@
                         <div class="col-sm-6 invoice-col">
                             <b>Cliente:</b> <br>
                             #################
-                           
+                        </div>
                                    
                         <!-- /.col -->
                     </div>
@@ -67,24 +66,23 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>5003</td>
+                                        <td>####</td>
                                          <td><span class="label label-default">CCF</span></td>
-                                        <td>20/04/2018</td>
-                                        <td>$ 200.44</td>
+                                        <td>##/##/####</td>
+                                        <td>$ ###.##</td>
                                         
                                     </tr>
                                     <tr>
-                                        <td>5005</td>
+                                        <td>####</td>
                                          <td><span class="label label-default">CCF</span></td>
-                                        <td>20/04/2018</td>
-                                        <td>$ 200.44</td>
+                                        <td>##/##/####</td>
+                                        <td>$ ###.##</td>
                                     </tr>
                                     </tbody>
                                     <tbody>
                                     <tr>
                                         <td colspan="3"><b>MONTO TOTAL</b></td>
-                                        <td><b>$ 400.88</b></td>
-                                        <td></td>
+                                        <td><b>$ ####.##</b></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -97,7 +95,7 @@
                     <!-- this row will not appear when printing -->
                     <div class="row no-print">
                         <div class="col-xs-12">
-                            <a href="#" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-print"></i> Imprimir</a>
+                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
                             <button type="button" class="btn btn-lg btn-success pull-right" style="margin-right: 5px;">
                                 <i class="fa fa-file-excel-o"></i> Exportar a Excel
                             </button>

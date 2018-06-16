@@ -27,8 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="page-header">
-                                <i class="fa fa-globe"></i> LGL S.A. de C.V. <br>
-                                Informe de compras por Proveedor
+                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de compras por Proveedor
                             </h2>
                         </div>
                         <!-- /.col -->
@@ -77,24 +76,23 @@
                                     <tr>
                                         <td>Lacteos</td>
                                         <td>Leche</td>
-                                        <td>20/04/2018</td>
-                                        <td>50 lb</td>
-                                        <td>$ 200.44</td>
+                                        <td>##/##/####</td>
+                                        <td>## lb</td>
+                                        <td>$ ####.##</td>
                                         
                                     </tr>
                                     <tr>
                                          <td>Esencias</td>
                                         <td>Vainilla</td>
-                                        <td>20/04/2018</td>
-                                        <td>100 lb</td>
-                                        <td>$ 200.44</td>
+                                        <td>##/##/####</td>
+                                        <td>## lb</td>
+                                        <td>$ ####.##</td>
                                     </tr>
                                     </tbody>
                                     <tbody>
                                     <tr>
                                         <td colspan="4"><b>MONTO TOTAL</b></td>
-                                        <td><b>$ 400.88</b></td>
-                                        <td></td>
+                                        <td><b>$ ####.##</b></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -107,7 +105,7 @@
                     <!-- this row will not appear when printing -->
                     <div class="row no-print">
                         <div class="col-xs-12">
-                            <a href="#" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-print"></i> Imprimir</a>
+                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
                             <button type="button" class="btn btn-lg btn-success pull-right" style="margin-right: 5px;">
                                 <i class="fa fa-file-excel-o"></i> Exportar a Excel
                             </button>

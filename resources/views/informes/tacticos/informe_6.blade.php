@@ -27,8 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="page-header">
-                                <i class="fa fa-globe"></i> LGL S.A. de C.V. <br>
-                                 Informe de Margen de Ganancias por Producto
+                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de Margen de Ganancias por Producto
                             </h2>
                         </div>
                         <!-- /.col -->
@@ -73,20 +72,19 @@
                                     <tr>
                                         <td>Lacteos</td>
                                         <td>Leche</td>
-                                        <td>$ 400.40</td>
+                                        <td>$ ###.##</td>
                                         
                                     </tr>
                                     <tr>
                                          <td>Esencias</td>
                                         <td>Vainilla</td>
-                                        <td>$ 100.50</td>
+                                        <td>$ ###.##</td>
                                     </tr>
                                     </tbody>
                                     <tbody>
                                     <tr>
                                         <td colspan="2"><b>GANANCIA TOTAL</b></td>
-                                        <td><b>$ 500.90</b></td>
-                                        <td></td>
+                                        <td><b>$ ####.##</b></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -99,7 +97,7 @@
                     <!-- this row will not appear when printing -->
                     <div class="row no-print">
                         <div class="col-xs-12">
-                            <a href="#" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-print"></i> Imprimir</a>
+                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
                             <button type="button" class="btn btn-lg btn-success pull-right" style="margin-right: 5px;">
                                 <i class="fa fa-file-excel-o"></i> Exportar a Excel
                             </button>

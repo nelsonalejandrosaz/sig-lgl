@@ -38,7 +38,7 @@
                             <b>Generado por:</b> <br>
                             ################# <br>
                             <b>Fecha y hora de generación:</b> <br>
-                            ################# <br>t
+                            ################# <br>
                         </div>
                         <!-- /.col -->
                         <div class="col-sm-6 invoice-col">
@@ -68,30 +68,30 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>Azucena</td>
-                                        <td>JORGE'S PAN, S.A. DE C.V.</td>
-                                        <td>1887</td>
+                                        <td>Vendedor 1</td>
+                                        <td>Cliente 1</td>
+                                        <td>####</td>
                                         <td><span class="label label-default">CCF</span></td>
-                                        <td>20/04/2018</td>
-                                        <td>$ 176.44</td>
-                                        <td>$ 176.44</td>
-                                        <td>51</td>
+                                        <td>##/##/##</td>
+                                        <td>$ ###.##</td>
+                                        <td>$ ###.##</td>
+                                        <td>##</td>
                                     </tr>
                                     <tr>
-                                        <td>Azucena</td>
-                                        <td>MEDRANO FLORES SA DE CV</td>
-                                        <td>1889</td>
+                                        <td>Vendedor 1</td>
+                                        <td>Cliente 2</td>
+                                        <td>####</td>
                                         <td><span class="label label-default">CCF</span></td>
-                                        <td>20/04/2018</td>
-                                        <td>$ 265.17</td>
-                                        <td>$ 265.17</td>
-                                        <td>51</td>
+                                        <td>##/##/##</td>
+                                        <td>$ ###.##</td>
+                                        <td>$ ###.##</td>
+                                        <td>##</td>
                                     </tr>
                                     </tbody>
                                     <tbody>
                                     <tr>
                                         <td colspan="6"><b>TOTAL SALDO PENDIENTE</b></td>
-                                        <td><b>$ 7,351.68</b></td>
+                                        <td><b>$ ####.##</b></td>
                                         <td></td>
                                     </tr>
                                     </tbody>
@@ -105,7 +105,7 @@
                     <!-- this row will not appear when printing -->
                     <div class="row no-print">
                         <div class="col-xs-12">
-                            <a href="#" target="_blank" class="btn btn-lg btn-default"><i class="fa fa-print"></i> Imprimir</a>
+                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
                             <button type="button" class="btn btn-lg btn-success pull-right" style="margin-right: 5px;">
                                 <i class="fa fa-file-excel-o"></i> Exportar a Excel
                             </button>

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login');
 });
 
 Route::group(['middleware' => 'auth'], function () {
@@ -48,4 +48,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/tactico/5','InformesTacticosController@informe5')->name('tactico.5');
     Route::get('/tactico/6','InformesTacticosController@informe6_parametros')->name('tactico.6.parametros');
     Route::post('/tactico/6','InformesTacticosController@informe6')->name('tactico.6');
+    /**
+     * Rutas para el ETL
+     */
+    Route::get('/etl/load','ETLController@show')->name('etl.show');
+    /**
+     * Rutas para backup
+     */
+    Route::get('/backup/import','BackupController@importShow')->name('backup.import.show');
+    Route::get('/backup/export','BackupController@exportShow')->name('backup.export.show');
 });

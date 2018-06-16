@@ -69,7 +69,7 @@ Menu::macro('menu_estrategico', function () {
         ->add(Menu::adminlteSeparator('Reportes'))
 //        ->action('HomeController@index','<i class="fa fa-file-zip-o"></i><span>ETL</span>')
         // Usuarios
-        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-users"></i><span>Estratégicos</span> <i class="fa fa-angle-left pull-right"></i></a>')
+        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-cube"></i><span>Estratégicos</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')
             ->route('estrategico.1.parametros','<i class="fa fa-file-text-o"></i><span>Cuentas por Cobrar</span>')->addClass('treeview-menu')
             ->route('estrategico.2.parametros','<i class="fa fa-file-text-o"></i><span>Productos mas vendidos</span>')
@@ -77,7 +77,7 @@ Menu::macro('menu_estrategico', function () {
             ->route('estrategico.4.parametros','<i class="fa fa-file-text-o"></i><span>Compras dos meses</span>')
             ->route('estrategico.5.parametros','<i class="fa fa-file-text-o"></i><span>Ventas dos meses</span>')
         )
-        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-floppy-o"></i><span>Tácticos</span> <i class="fa fa-angle-left pull-right"></i></a>')
+        ->add(Menu::new()->prepend('<a href="#"><i class="fa fa-cubes"></i><span>Tácticos</span> <i class="fa fa-angle-left pull-right"></i></a>')
             ->addParentClass('treeview')
             ->route('tactico.1.parametros','<i class="fa fa-file-text-o"></i><span>Ventas por categoria</span>')->addClass('treeview-menu')
             ->route('tactico.2.parametros','<i class="fa fa-file-text-o"></i><span>Ventas por cliente</span>')

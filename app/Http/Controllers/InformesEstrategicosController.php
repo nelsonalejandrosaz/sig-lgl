@@ -28,12 +28,12 @@ class InformesEstrategicosController extends Controller
 
     public function informe3_parametros()
     {
-        return view('informes.estrategicos.informe_1_parametros');
+        return view('informes.estrategicos.informe_3_parametros');
     }
 
     public function informe3()
     {
-        return view('informes.estrategicos.informe_1');
+        return view('informes.estrategicos.informe_3');
     }
 
     public function informe4_parametros()

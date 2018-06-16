@@ -9,7 +9,7 @@
 @endsection
 
 @section('contentheader_title')
-     Resumen de cuentas por cobrar por cliente
+    Resumen de cuentas por cobrar por cliente
 @endsection
 
 @section('contentheader_description')
@@ -27,7 +27,8 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="page-header">
-                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de cuentas por cobrar por cliente
+                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de cuentas por cobrar por
+                                cliente
                             </h2>
                         </div>
                         <!-- /.col -->
@@ -45,7 +46,7 @@
                             <b>Cliente:</b> <br>
                             #################
                         </div>
-                                   
+
                         <!-- /.col -->
                     </div>
                     <!-- /.row -->
@@ -61,20 +62,20 @@
                                         <th style="width: 20%;">Tipo de Documento</th>
                                         <th style="width: 15%;">fecha</th>
                                         <th style="width: 15%;">Saldo pendiente</th>
-                                       
+
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td>####</td>
-                                         <td><span class="label label-default">CCF</span></td>
+                                        <td><span class="label label-default">CCF</span></td>
                                         <td>##/##/####</td>
                                         <td>$ ###.##</td>
-                                        
+
                                     </tr>
                                     <tr>
                                         <td>####</td>
-                                         <td><span class="label label-default">CCF</span></td>
+                                        <td><span class="label label-default">CCF</span></td>
                                         <td>##/##/####</td>
                                         <td>$ ###.##</td>
                                     </tr>
@@ -95,7 +96,9 @@
                     <!-- this row will not appear when printing -->
                     <div class="row no-print">
                         <div class="col-xs-12">
-                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
+                            <button class="btn btn-lg btn-default" onclick="window.print();"><i class="fa fa-print"></i>
+                                Imprimir
+                            </button>
                             <button type="button" class="btn btn-lg btn-success pull-right" style="margin-right: 5px;">
                                 <i class="fa fa-file-excel-o"></i> Exportar a Excel
                             </button>

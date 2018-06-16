@@ -1,7 +1,7 @@
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
-    Resumen de cuentas por cobrar
+    Comparativos de margen de ganancia entre dos meses
 @endsection
 
 @section('CSSExtra')
@@ -9,7 +9,7 @@
 @endsection
 
 @section('contentheader_title')
-    Resumen de cuentas por cobrar
+    Comparativos de margen de ganancia entre dos meses
 @endsection
 
 @section('contentheader_description')
@@ -27,18 +27,20 @@
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" method="post" action="{{route('estrategico.1')}}">
+                    <form role="form" method="post" action="{{route('estrategico.4')}}">
                         @csrf
                         <div class="box-body">
-                            {{--Fecha de inicio--}}
+                            <h4>Meses a comparar</h4>
+                            <br>
+                            {{--Mes 1--}}
                             <div class="form-group">
-                                <label for="fecha_inicio">Fecha inicio</label>
-                                <input type="date" class="form-control" id="fecha_inicio" name="fecha_inicio" placeholder="Seleccione una fecha">
+                                <label for="fecha">Mes y año 1</label>
+                                <input type="month" class="form-control" id="fecha" name="fecha">
                             </div>
-                            {{--Fecha de fin--}}
+                            {{--Mes 2--}}
                             <div class="form-group">
-                                <label for="fecha_fin">Fecha final</label>
-                                <input type="date" class="form-control" id="fecha_fin" name="fecha_fin" placeholder="Seleccione una fecha">
+                                <label for="fecha">Mes y año 2</label>
+                                <input type="month" class="form-control" id="fecha" name="fecha">
                             </div>
                         </div>
                         <!-- /.box-body -->

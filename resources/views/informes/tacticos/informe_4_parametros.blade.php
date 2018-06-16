@@ -55,7 +55,7 @@
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-lg btn-primary pull-right">Generar</button>
+                            <button type="submit" class="btn btn-lg btn-primary pull-right"><i class="fa fa-file-text-o"></i> Generar</button>
                         </div>
                     </form>
                 </div>

@@ -25,4 +25,34 @@ class InformesEstrategicosController extends Controller
     {
         return view('informes.estrategicos.informe_2');
     }
+
+    public function informe3_parametros()
+    {
+        return view('informes.estrategicos.informe_1_parametros');
+    }
+
+    public function informe3()
+    {
+        return view('informes.estrategicos.informe_1');
+    }
+
+    public function informe4_parametros()
+    {
+        return view('informes.estrategicos.informe_4_parametros');
+    }
+
+    public function informe4()
+    {
+        return view('informes.estrategicos.informe_4');
+    }
+
+    public function informe5_parametros()
+    {
+        return view('informes.estrategicos.informe_5_parametros');
+    }
+
+    public function informe5()
+    {
+        return view('informes.estrategicos.informe_5');
+    }
 }

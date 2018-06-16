@@ -1,7 +1,7 @@
 @extends('adminlte::layouts.app')
 
 @section('htmlheader_title')
-    Resumen de cuentas por cobrar
+    Ventas por cliente
 @endsection
 
 @section('CSSExtra')
@@ -9,7 +9,7 @@
 @endsection
 
 @section('contentheader_title')
-    Resumen de cuentas por cobrar
+    Ventas por cliente
 @endsection
 
 @section('contentheader_description')
@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="page-header">
-                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de cuentas por cobrar
+                                <i class="fa fa-globe"></i> LGL S.A. de C.V. -- Informe de ventas por cliente
                             </h2>
                         </div>
                         <!-- /.col -->
@@ -38,12 +38,12 @@
                             <b>Generado por:</b> <br>
                             ################# <br>
                             <b>Fecha y hora de generación:</b> <br>
-                            ################# <br>t
+                            ################# <br>
                         </div>
                         <!-- /.col -->
                         <div class="col-sm-6 invoice-col">
-                            <b>Fecha de corte:</b> <br>
-                            #################
+                            <b>Rango de fecha consultado:</b> <br>
+                            ###### de #### hasta ##### de ####
                         </div>
                         <!-- /.col -->
                     </div>
@@ -56,43 +56,30 @@
                                 <table id="tblProductos" class="table table-striped table-condensed">
                                     <thead>
                                     <tr>
-                                        <th style="width: 10%;">Vendedor</th>
-                                        <th style="width: 30%;">Cliente</th>
-                                        <th style="width: 10%;">N° documento</th>
-                                        <th style="width: 10%;">Tipo doc</th>
-                                        <th style="width: 10%;">Fecha</th>
-                                        <th style="width: 10%;">Valor doc</th>
-                                        <th style="width: 10%;">Saldo pendiente</th>
-                                        <th style="width: 10%;">Antigüedad</th>
+                                        <th style="width: 25%;"># Documento</th>
+                                        <th style="width: 25%;">Fecha</th>
+                                        <th style="width: 25%;">Tipo documento</th>
+                                        <th style="width: 25%;">Monto venta</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td>Azucena</td>
-                                        <td>JORGE'S PAN, S.A. DE C.V.</td>
-                                        <td>1887</td>
-                                        <td><span class="label label-default">CCF</span></td>
-                                        <td>20/04/2018</td>
-                                        <td>$ 176.44</td>
-                                        <td>$ 176.44</td>
-                                        <td>51</td>
+                                        <td>####</td>
+                                        <td>##/##/##</td>
+                                        <td>Factura</td>
+                                        <td>$ ####.##</td>
                                     </tr>
                                     <tr>
-                                        <td>Azucena</td>
-                                        <td>MEDRANO FLORES SA DE CV</td>
-                                        <td>1889</td>
-                                        <td><span class="label label-default">CCF</span></td>
-                                        <td>20/04/2018</td>
-                                        <td>$ 265.17</td>
-                                        <td>$ 265.17</td>
-                                        <td>51</td>
+                                        <td>####</td>
+                                        <td>##/##/##</td>
+                                        <td>CCF</td>
+                                        <td>$ ####.##</td>
                                     </tr>
                                     </tbody>
                                     <tbody>
                                     <tr>
-                                        <td colspan="6"><b>TOTAL SALDO PENDIENTE</b></td>
-                                        <td><b>$ 7,351.68</b></td>
-                                        <td></td>
+                                        <td colspan="3"><b>TOTAL VENDIDO</b></td>
+                                        <td><b>$ ####.##</b></td>
                                     </tr>
                                     </tbody>
                                 </table>

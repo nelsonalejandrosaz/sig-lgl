@@ -9,9 +9,6 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    /**
-     * Relaciones de User
-     */
     public function rol()
     {
         return $this->belongsTo('App\Rol');
@@ -23,7 +20,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'rol_id',
+        'nombre',
+        'apellido',
+        'email',
+        'password',
+        'username',
+        'telefono',
+        'rol_id',
+        'ruta_imagen'
     ];
 
     /**

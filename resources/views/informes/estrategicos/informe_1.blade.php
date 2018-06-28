@@ -36,14 +36,14 @@
                     <div class="row invoice-info">
                         <div class="col-sm-6 invoice-col">
                             <b>Generado por:</b> <br>
-                            ################# <br>
+                            {{Auth::user()->name}} <br>
                             <b>Fecha y hora de generación:</b> <br>
-                            ################# <br>
+                            {{\Carbon\Carbon::now()}} <br>
                         </div>
                         <!-- /.col -->
                         <div class="col-sm-6 invoice-col">
                             <b>Fecha de corte:</b> <br>
-                            #################
+                            Del {{ $fecha_inicio }} al {{ $fecha_final }}
                         </div>
                         <!-- /.col -->
                     </div>
@@ -63,35 +63,25 @@
                                         <th style="width: 10%;">Fecha</th>
                                         <th style="width: 10%;">Valor doc</th>
                                         <th style="width: 10%;">Saldo pendiente</th>
-                                        <th style="width: 10%;">Antigüedad</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    @foreach($ventas as $venta)
                                     <tr>
-                                        <td>Vendedor 1</td>
-                                        <td>Cliente 1</td>
-                                        <td>####</td>
-                                        <td><span class="label label-default">CCF</span></td>
-                                        <td>##/##/##</td>
-                                        <td>$ ###.##</td>
-                                        <td>$ ###.##</td>
-                                        <td>##</td>
+                                        <td>{{$venta->vendedor->name}}</td>
+                                        <td>{{$venta->cliente->nombre}}</td>
+                                        <td>{{$venta->numero}}</td>
+                                        <td><span class="label label-default">{{$venta->tipo_documento->codigo}}</span></td>
+                                        <td>{{$venta->fecha->format('d/m/Y')}}</td>
+                                        <td>$ {{number_format($venta->venta_total_con_impuestos,2)}}</td>
+                                        <td>$ {{number_format($venta->saldo,2)}}</td>
                                     </tr>
-                                    <tr>
-                                        <td>Vendedor 1</td>
-                                        <td>Cliente 2</td>
-                                        <td>####</td>
-                                        <td><span class="label label-default">CCF</span></td>
-                                        <td>##/##/##</td>
-                                        <td>$ ###.##</td>
-                                        <td>$ ###.##</td>
-                                        <td>##</td>
-                                    </tr>
+                                    @endforeach
                                     </tbody>
                                     <tbody>
                                     <tr>
                                         <td colspan="6"><b>TOTAL SALDO PENDIENTE</b></td>
-                                        <td><b>$ ####.##</b></td>
+                                        <td><b>$ {{number_format($ventas->sum('saldo'),2)}}</b></td>
                                         <td></td>
                                     </tr>
                                     </tbody>

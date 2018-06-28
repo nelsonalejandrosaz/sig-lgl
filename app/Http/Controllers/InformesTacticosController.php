@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Categoria;
 use Illuminate\Http\Request;
 
 class InformesTacticosController extends Controller
 {
     public function informe1_parametros()
     {
-        return view('informes.tacticos.informe_1_parametros');
+        $categorias = Categoria::all();
+        return view('informes.tacticos.informe_1_parametros',[
+            'categorias' => $categorias,
+        ]);
     }
 
     public function informe1()

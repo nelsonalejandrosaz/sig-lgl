@@ -44,10 +44,9 @@
                              <div class="form-group">
                                 <label for="Proveedor">Categoria de producto</label>
                                <select class="form-control">
-                                        <option value="proveedor1">Categoría 1</option>
-                                        <option value="proveedor2">Categoría 2</option>
-                                        <option value="proveedor3">Categoría 3</option>
-                                        <option value="proveedor4">Categoría 4</option>
+                                   @foreach($categorias as $categoria)
+                                        <option value="{{$categoria->id}}">{{$categoria->nombre}}</option>
+                                   @endforeach
                                 </select>
                                 
                             </div>

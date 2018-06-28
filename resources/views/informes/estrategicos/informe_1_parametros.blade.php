@@ -56,5 +56,6 @@
 
 @section('JSExtra')
     {{--Aqui va JS adicional para la vista--}}
+    {!! Toastr::render() !!}
 @endsection
 

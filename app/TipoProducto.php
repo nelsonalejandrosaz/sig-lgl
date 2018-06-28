@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class TipoProducto extends Model
 {
-    //
+    protected $fillable = [
+        'codigo',
+        'nombre',
+    ];
 }

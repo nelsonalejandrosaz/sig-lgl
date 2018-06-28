@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class TipoDocumento extends Model
 {
-    //
+    protected $fillable = [
+        'codigo',
+        'nombre',
+    ];
 }
